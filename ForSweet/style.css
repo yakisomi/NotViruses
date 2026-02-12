@@ -1,0 +1,249 @@
+/* Обнуление отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+/* Розовый фон градиент */
+body {
+    background: linear-gradient(145deg, #ffe4ec 0%, #ffd9e5 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Падающие сердечки */
+.heart {
+    position: fixed;
+    opacity: 0.6;
+    user-select: none;
+    pointer-events: none;
+    z-index: 5;
+    animation: fall 8s linear forwards;
+    color: #ff8da1;
+}
+
+/* Анимация падения */
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0.2;
+    }
+}
+
+/* Белая карточка контента */
+.container {
+    max-width: 650px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 48px 48px 32px 32px;
+    box-shadow: 0 20px 40px rgba(255, 107, 149, 0.25);
+    padding: 32px 24px;
+    border: 2px solid #ffb6c1;
+    position: relative;
+    z-index: 10;
+}
+
+/* Блок с конвертом */
+.envelope-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+/* Сам конверт */
+.envelope {
+    background: #ffb7c5;
+    width: 180px;
+    height: 130px;
+    position: relative;
+    border-radius: 12px 12px 24px 24px;
+    box-shadow: 0 8px 0 #e6a0b0, 0 12px 20px rgba(255, 120, 140, 0.4);
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Клапан конверта */
+.envelope::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 40px solid #ffc1cc;
+}
+
+/* Письмо внутри конверта */
+.envelope::after {
+    content: '💌';
+    position: absolute;
+    font-size: 50px;
+    color: #fff4f7;
+    text-shadow: 2px 2px 0 #ff95a5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Текст над конвертом */
+.envelope-text {
+    font-size: 26px;
+    font-weight: 600;
+    color: #b3445c;
+    text-shadow: 2px 2px 0 #ffe3e7;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+/* Все кнопки */
+.btn {
+    background: #ff90a5;
+    border: none;
+    border-radius: 60px;
+    padding: 14px 42px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 0 #b35a6b;
+    box-shadow: 0 8px 0 #c26a7a, 0 10px 20px rgba(255, 80, 120, 0.3);
+    cursor: pointer;
+    transition: 0.1s ease;
+    border: 2px solid #ffeef0;
+    letter-spacing: 3px;
+    margin: 12px 0;
+}
+
+/* Кнопка при наведении */
+.btn:hover {
+    transform: scale(1.05);
+    background: #ffa0b5;
+}
+
+/* Кнопка при нажатии */
+.btn:active {
+    transform: scale(0.95) translateY(8px);
+    box-shadow: 0 2px 0 #c26a7a, 0 10px 20px rgba(255, 80, 120, 0.3);
+}
+
+/* Маленькие кнопки */
+.btn-small {
+    padding: 12px 28px;
+    font-size: 18px;
+    margin: 8px;
+}
+
+/* Маленькие кнопки при наведении */
+.btn-small:hover {
+    transform: scale(1.05);
+}
+
+/* Маленькие кнопки при нажатии */
+.btn-small:active {
+    transform: scale(0.95) translateY(8px);
+}
+
+/* Блок с гифками */
+.gif-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+/* Изображение котика */
+.cat-gif {
+    width: 300px;
+    height: auto;
+    border-radius: 40px;
+    box-shadow: 0 12px 0 #e9748d, 0 20px 30px rgba(255, 130, 150, 0.5);
+    border: 5px solid #ffe2e8;
+    margin: 16px 0;
+}
+
+/* Белая карточка с текстом */
+.message-card {
+    background: white;
+    padding: 28px 22px;
+    border-radius: 32px;
+    box-shadow: inset 0 -4px 0 #ffb6c1, 0 15px 25px #ffc0cb70;
+    border: 3px solid #ffa7b6;
+    color: #9e4a5e;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 24px 0 16px;
+    text-align: center;
+    word-break: break-word;
+}
+
+/* Розовая плашка с праздником */
+.valentine-message {
+    background: #fff0f3;
+    padding: 20px;
+    border-radius: 28px;
+    color: #9e4a5e;
+    font-size: 24px;
+    font-weight: 600;
+    border: 3px dashed #ff90a5;
+    margin: 20px 0;
+}
+
+/* Ряд с кнопками Да/Неа */
+.row-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Скрытый элемент */
+.hidden {
+    display: none;
+}
+
+/* Все экраны-шаги */
+.section {
+    transition: opacity 0.3s;
+}
+
+/* Романтичный розовый текст */
+.text-romantic {
+    font-size: 22px;
+    background: rgba(255, 220, 240, 0.7);
+    padding: 18px;
+    border-radius: 50px;
+    color: #692b39;
+    border: 2px solid #ff90a5;
+}
+
+/* Жирный розовый текст */
+.bold-pink {
+    color: #c1445c;
+    font-weight: 700;
+}
+
+/* Текст в подвале */
+.footer-text {
+    margin-top: 24px;
+    color: #a15162;
+    font-size: 20px;
+}
