@@ -598,3 +598,28 @@ body {
         margin-top: 16px !important;
     }
 }
+
+@media (max-width: 768px) {
+    .heart {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .heart {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .heart {
+        font-size: 11px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .heart {
+        font-size: 10px !important;
+    }
+}
+
