@@ -257,6 +257,11 @@ body {
         margin: 10px auto;
     }
 
+    /* падающие сердечки */
+    .heart {
+        font-size: 16px !important;
+    }
+
     /* конверт */
     .envelope-section {
         display: flex;
@@ -416,6 +421,11 @@ body {
         margin: 8px auto;
     }
 
+    /* падающие сердечки */
+    .heart {
+        font-size: 14px !important;
+    }
+
     .envelope-section {
         margin-bottom: 24px;
     }
@@ -511,6 +521,11 @@ body {
         margin: 6px auto;
     }
 
+    /* падающие сердечки */
+    .heart {
+        font-size: 12px !important;
+    }
+
     .envelope-section {
         margin-bottom: 20px;
     }
@@ -603,6 +618,11 @@ body {
         margin: 5px auto;
     }
 
+    /* падающие сердечки */
+    .heart {
+        font-size: 10px !important;
+    }
+
     .envelope-section {
         margin-bottom: 18px;
     }
@@ -669,4 +689,3 @@ body {
         font-size: 16px !important;
     }
 }
-
