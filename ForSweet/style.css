@@ -225,7 +225,7 @@ body {
     transition: opacity 0.3s;
 }
 
-/* Романтичный розовый текст */
+/* текст */
 .text-romantic {
     font-size: 22px;
     background: rgba(255, 220, 240, 0.7);
@@ -235,7 +235,7 @@ body {
     border: 2px solid #ff90a5;
 }
 
-/* Жирный розовый текст */
+/* текст */
 .bold-pink {
     color: #c1445c;
     font-weight: 700;
@@ -259,13 +259,16 @@ body {
 
     /* конверт */
     .envelope-section {
-        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 28px;
     }
 
     .envelope {
         width: 90px;
         height: 65px;
-        margin-bottom: 12px;
+        margin-bottom: 16px;
     }
 
     .envelope::before {
@@ -281,25 +284,15 @@ body {
 
     .envelope-text {
         font-size: 17px;
-        margin-bottom: 16px;
+        margin-bottom: 24px;
         text-align: center;
         line-height: 1.3;
     }
 
-    /* гифки */
-    .cat-gif {
-        width: 180px;
-        max-width: 180px;
-        margin: 10px auto;
-        border-width: 3px;
-        box-shadow: 0 5px 0 #e9748d, 0 8px 15px rgba(255, 130, 150, 0.4);
-        display: block;
-    }
-
-    /* все кнопки */
+    /* кнопка далее */
     div[style*="display: flex; justify-content: center;"] {
-        margin-top: 8px;
-        margin-bottom: 4px;
+        margin-top: 4px;
+        margin-bottom: 0;
     }
 
     .btn {
@@ -333,7 +326,7 @@ body {
         align-items: center;
         gap: 14px;
         width: 100%;
-        margin: 12px 0 8px;
+        margin: 16px 0 8px;
         flex-wrap: wrap;
     }
 
@@ -356,20 +349,20 @@ body {
     /* весь текст */
     .gif-container div[style*="font-size: 28px"] {
         font-size: 19px !important;
-        margin-top: 8px !important;
-        margin-bottom: 8px !important;
+        margin-top: 12px !important;
+        margin-bottom: 12px !important;
         text-align: center !important;
     }
 
     .gif-container div[style*="font-size: 30px"] {
         font-size: 20px !important;
-        margin: 8px 0 !important;
+        margin: 12px 0 !important;
         text-align: center !important;
     }
 
     .gif-container div[style*="font-size: 32px"] {
         font-size: 21px !important;
-        margin: 8px 0 !important;
+        margin: 12px 0 !important;
         text-align: center !important;
     }
 
@@ -377,7 +370,7 @@ body {
     .message-card {
         padding: 14px 10px;
         font-size: 15px;
-        margin: 12px auto;
+        margin: 16px auto;
         border-width: 2px;
         text-align: center;
         width: 92%;
@@ -387,7 +380,7 @@ body {
     .valentine-message {
         padding: 10px;
         font-size: 19px;
-        margin: 12px auto;
+        margin: 16px auto;
         border-width: 2px;
         text-align: center;
         width: 92%;
@@ -405,12 +398,12 @@ body {
         line-height: 1.4;
         text-align: center;
         width: 94%;
-        margin: 12px auto;
+        margin: 16px auto;
     }
 
     #step5 div[style*="font-size: 28px"] {
         font-size: 19px !important;
-        margin-top: 16px !important;
+        margin-top: 20px !important;
         margin-bottom: 8px !important;
         text-align: center !important;
     }
@@ -424,13 +417,13 @@ body {
     }
 
     .envelope-section {
-        margin-bottom: 14px;
+        margin-bottom: 24px;
     }
 
     .envelope {
         width: 80px;
         height: 58px;
-        margin-bottom: 10px;
+        margin-bottom: 14px;
     }
 
     .envelope::before {
@@ -446,18 +439,18 @@ body {
 
     .envelope-text {
         font-size: 16px;
-        margin-bottom: 14px;
+        margin-bottom: 20px;
     }
 
     .cat-gif {
         width: 160px;
         max-width: 160px;
-        margin: 8px auto;
+        margin: 12px auto;
     }
 
     div[style*="display: flex; justify-content: center;"] {
-        margin-top: 6px;
-        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-bottom: 0;
     }
 
     .btn {
@@ -473,41 +466,41 @@ body {
 
     .row-buttons {
         gap: 12px;
-        margin: 10px 0 6px;
+        margin: 14px 0 6px;
     }
 
     .message-card {
         padding: 12px 8px;
         font-size: 14px;
         width: 95%;
-        margin: 10px auto;
+        margin: 14px auto;
     }
 
     .valentine-message {
         padding: 9px;
         font-size: 18px;
         width: 95%;
-        margin: 10px auto;
+        margin: 14px auto;
     }
 
     .gif-container div[style*="font-size: 28px"] {
         font-size: 18px !important;
-        margin-top: 6px !important;
-        margin-bottom: 6px !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
     }
 
     .gif-container div[style*="font-size: 30px"] {
         font-size: 19px !important;
-        margin: 6px 0 !important;
+        margin: 10px 0 !important;
     }
 
     .gif-container div[style*="font-size: 32px"] {
         font-size: 20px !important;
-        margin: 6px 0 !important;
+        margin: 10px 0 !important;
     }
 
     #step5 .message-card {
-        margin: 10px auto;
+        margin: 14px auto;
     }
 }
 
@@ -519,13 +512,13 @@ body {
     }
 
     .envelope-section {
-        margin-bottom: 12px;
+        margin-bottom: 20px;
     }
 
     .envelope {
         width: 70px;
         height: 50px;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
     }
 
     .envelope::before {
@@ -541,17 +534,17 @@ body {
 
     .envelope-text {
         font-size: 15px;
-        margin-bottom: 12px;
+        margin-bottom: 18px;
     }
 
     .cat-gif {
         width: 140px;
         max-width: 140px;
-        margin: 6px auto;
+        margin: 10px auto;
     }
 
     div[style*="display: flex; justify-content: center;"] {
-        margin-top: 4px;
+        margin-top: 0;
         margin-bottom: 0;
     }
 
@@ -568,21 +561,21 @@ body {
 
     .row-buttons {
         gap: 10px;
-        margin: 8px 0 4px;
+        margin: 12px 0 4px;
     }
 
     .message-card {
         padding: 10px 6px;
         font-size: 13px;
         width: 96%;
-        margin: 8px auto;
+        margin: 12px auto;
     }
 
     .valentine-message {
         padding: 8px;
         font-size: 17px;
         width: 96%;
-        margin: 8px auto;
+        margin: 12px auto;
     }
 
     .gif-container div[style*="font-size: 28px"],
@@ -594,12 +587,12 @@ body {
     #step5 .message-card {
         font-size: 13px;
         padding: 10px 6px;
-        margin: 8px auto;
+        margin: 12px auto;
     }
 
     #step5 div[style*="font-size: 28px"] {
         font-size: 17px !important;
-        margin-top: 12px !important;
+        margin-top: 16px !important;
     }
 }
 
@@ -611,13 +604,13 @@ body {
     }
 
     .envelope-section {
-        margin-bottom: 10px;
+        margin-bottom: 18px;
     }
 
     .envelope {
         width: 60px;
         height: 45px;
-        margin-bottom: 6px;
+        margin-bottom: 10px;
     }
 
     .envelope::before {
@@ -633,13 +626,13 @@ body {
 
     .envelope-text {
         font-size: 14px;
-        margin-bottom: 10px;
+        margin-bottom: 16px;
     }
 
     .cat-gif {
         width: 120px;
         max-width: 120px;
-        margin: 5px auto;
+        margin: 8px auto;
     }
 
     .btn {
@@ -655,19 +648,19 @@ body {
 
     .row-buttons {
         gap: 8px;
-        margin: 6px 0 2px;
+        margin: 10px 0 2px;
     }
 
     .message-card {
         padding: 8px 5px;
         font-size: 12px;
-        margin: 6px auto;
+        margin: 10px auto;
     }
 
     .valentine-message {
         padding: 6px;
         font-size: 16px;
-        margin: 6px auto;
+        margin: 10px auto;
     }
 
     .gif-container div[style*="font-size: 28px"],
@@ -676,6 +669,4 @@ body {
         font-size: 16px !important;
     }
 }
-
-
 
